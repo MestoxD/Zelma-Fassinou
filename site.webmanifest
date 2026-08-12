@@ -1,0 +1,16 @@
+{
+  "name": "S.E. Mme Zelma Yollande Nobre Fassinou — CEDEAO Sénégal",
+  "short_name": "Z. Y. Nobre Fassinou",
+  "description": "Portfolio officiel de S.E. Mme Zelma Yollande Nobre Fassinou, Représentante Résidente de la CEDEAO au Sénégal.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#041F13",
+  "theme_color": "#041F13",
+  "lang": "fr",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
