@@ -1199,6 +1199,15 @@ document.querySelectorAll('[data-page="accueil"]').forEach(a=>a.addEventListener
   if(page!=='accueil'){e.preventDefault();closeM();switchPage('accueil',a.getAttribute('href'))}
 }));
 
+/* liens d'ancre : défilement sans ajouter #section dans l'URL */
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+  if(e.defaultPrevented)return;
+  e.preventDefault(); closeM();
+  const h=a.getAttribute('href'),t=h.length>1?document.querySelector(h):null;
+  if(t&&t.offsetParent!==null)t.scrollIntoView(); else scrollTo(0,0);
+}));
+if(location.hash)history.replaceState(null,'',location.pathname+location.search);
+
 /* ================= reveals ================= */
 function setRV(){
   if(reduced){document.querySelectorAll('.rv,.rv-l,.rv-r').forEach(e=>e.style.opacity=1);return}
